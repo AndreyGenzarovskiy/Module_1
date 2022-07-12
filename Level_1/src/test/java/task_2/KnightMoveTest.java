@@ -14,6 +14,16 @@ class KnightMoveTest {
         int nextMoveY = 1;
         boolean expected = true;
         boolean actual = KnightMove.isCorrectKnightMove(knightX, knightY, nextMoveX, nextMoveY);
-        assertEquals(expected, actual, "knight cant go there!");
+        assertEquals(expected, actual);
+    }
+    @Test
+    void isCorrectKnightMoveNegative() {
+        int knightX = 2;
+        int knightY = 3;
+        int nextMoveX = 2;
+        int nextMoveY = 0;
+        boolean expected = false;
+        boolean actual = KnightMove.isCorrectKnightMove(knightX, knightY, nextMoveX, nextMoveY);
+        assertEquals(expected, actual);
     }
 }

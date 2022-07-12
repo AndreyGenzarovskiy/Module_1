@@ -3,7 +3,6 @@ import task_1.ArraysUniqeSymbols;
 
 import java.util.Arrays;
 import static task_3.AreaOfTriangle.*;
-import static task_1.InitializeArray.getInitializeArray;
 import static task_2.KnightMove.isCorrectKnightMove;
 public class Main {
     public static void main(String[] args){
