@@ -1,18 +1,16 @@
 package main;
-import task_1.FieldCreate;
-import task_1.Status;
-import java.util.Arrays;
+
+import game.GameLife;
 import java.util.Scanner;
 
-import static task_1.Status.array;
 
 public class Main {
     public static void main(String[] args){
         System.out.print("Enter width and height of field: ");
-        for( int i = 0; i < array.length; i++) {
-            System.out.println(Arrays.toString(array[i]));
-        }
-        System.out.println();
-        Status.getNextGeneration();
+        Scanner scanner = new Scanner(System.in);
+        int width = scanner.nextInt();
+        int height = scanner.nextInt();
+        GameLife gameLife = new GameLife(width, height);
+        gameLife.getNextGeneration();
     }
 }
